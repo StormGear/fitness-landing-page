@@ -5,6 +5,9 @@ import Footer from "./Footer";
 import CTA from "./CTA";
 import React from 'react'
 import Form from "./Form";
+import Partnerships from "./Partnerships";
+import Highlights from "./Highlights";
+import TextImageSection from "./Choose";
 
 const LandingPage = () => {
 
@@ -14,8 +17,10 @@ const LandingPage = () => {
         <Navbar />
         <Hero />
         <Testimonials />
-         <CTA />
-         <Form />
+        <Partnerships />
+        <Highlights />
+         {/* <CTA />
+         <Form /> */}
         <Footer />
     </div>
   );

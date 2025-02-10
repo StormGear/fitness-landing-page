@@ -1,4 +1,8 @@
 import React from 'react'
+import { FaSquarePhone } from "react-icons/fa6";
+import { TbWorldWww } from "react-icons/tb";
+import { FaPhoneAlt } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
@@ -6,8 +10,23 @@ const Footer = () => {
       
       {/* Footer */}
       <footer className="bg-white text-black py-8">
-        <div className="container mx-auto px-6 text-center">
-          <p>&copy; 2023 MyBrand. All rights reserved.</p>
+        <div className="container mx-auto px-6 text-center flex flex-col md:flex-row items-center justify-center">
+          <p className='flex items-baseline mr-4'> 
+            <div className='rounded-full bg-black h-8 w-8 flex items-center justify-center mr-2'> 
+                <FaPhoneAlt className='text-white' /> 
+            </div>
+          (713) 501-9344</p>
+          <p className='flex items-baseline mr-4'>
+          <div className='rounded-full bg-black h-8 w-8 flex items-center justify-center mr-2'> 
+                <TbWorldWww className='text-white' /> 
+            </div>
+         <span className="underline">pcamerica.org/vendor/alchemy</span></p>
+          <p className='flex items-baseline mr-4'>
+          <div className='rounded-full bg-black h-8 w-8 flex items-center justify-center mr-2 my-1'> 
+                <MdEmail className='text-white' /> 
+            </div>
+            <span className="underline">
+            arquella@alchemy-consulting.com</span></p>
         </div>
       </footer>
     </div>

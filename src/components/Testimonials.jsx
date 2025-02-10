@@ -1,7 +1,8 @@
 
 
-import { motion } from 'framer-motion'
-import React from 'react'
+// import { motion } from 'framer-motion'
+// import React from 'react'
+import Choose from './Choose'
 
 const Testimonials = () => {
   return (
@@ -9,10 +10,8 @@ const Testimonials = () => {
        {/* Testimonials Section */}
        <div className="bg-white py-16">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center text-[#ff3130]-800 mb-12">
-            What Our Customers Say
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <Choose />
+          {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[1, 2].map((item) => (
               <motion.div
                 key={item}
@@ -28,7 +27,7 @@ const Testimonials = () => {
                 <p className="text-[#ff3130]-800 font-semibold">- Customer {item}</p>
               </motion.div>
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
