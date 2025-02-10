@@ -20,13 +20,13 @@ const Footer = () => {
           <div className='rounded-full bg-black h-8 w-8 flex items-center justify-center mr-2'> 
                 <TbWorldWww className='text-white' /> 
             </div>
-         <span className="underline">pcamerica.org/vendor/alchemy</span></p>
+         <span className="underline cursor-pointer"><a href="https://pcamerica.org/vendor/alchemy" target='_blank'>pcamerica.org/vendor/alchemy</a></span></p>
           <p className='flex items-baseline mr-4'>
           <div className='rounded-full bg-black h-8 w-8 flex items-center justify-center mr-2 my-1'> 
                 <MdEmail className='text-white' /> 
             </div>
-            <span className="underline">
-            arquella@alchemy-consulting.com</span></p>
+            <span className="underline cursor-pointer">
+            <a href="mailto:arquella@alchemy-consulting.com">arquella@alchemy-consulting.com</a></span></p>
         </div>
       </footer>
     </div>

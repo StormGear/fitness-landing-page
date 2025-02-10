@@ -12,11 +12,11 @@ const Partnerships = () => {
   return (
     <>
     <div className='border-t-2 border-b-2 border-black p-6 flex justify-between'>
-          <div className='p-6 flex flex-col'>
+          <div className='p-6 flex flex-col md:text-2xl'>
               <p>In Partnership</p>
               <p>&nbsp;&nbsp;&nbsp;&nbsp;With...</p>
           </div>
-          <div className='p-6 flex flex-col'>
+          <div className='hidden p-6 md:flex flex-col md:text-2xl'>
               <p>Designed Specifically</p>
               <p>&nbsp;&nbsp;&nbsp;&nbsp;For...</p>
           </div>
@@ -28,11 +28,17 @@ const Partnerships = () => {
                       <p className='underline'>Intuitive Global Consulting &</p>
                       <p>&nbsp;&nbsp;&nbsp;<span className="underline">The Kyra Company</span></p>
               </div>
-              <div className='flex text-center justify-center'>
+              <div className='flex text-center justify-center mb-10'>
                <img src={logo3} alt="" className='h-24 w-24 mx-4'/>
                 <img src={logo2} alt="" className='h-20 w-24 '/>
               </div>
           </div>
+          <div className='border-t-2 border-b-2 border-black p-6 flex justify-between md:hidden'>
+          <div className='p-6 flex flex-col md:text-2xl'>
+              <p>Designed Specifically</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;For...</p>
+          </div>
+        </div>
           <div className='mt-6 p-6'>
             <ul>
                 <li className='flex place-items-baseline mb-4'>
