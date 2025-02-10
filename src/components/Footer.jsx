@@ -9,7 +9,7 @@ const Footer = () => {
     <div>
       
       {/* Footer */}
-      <footer className="bg-white text-black py-8">
+      <footer id="footer" className="bg-white text-black py-8">
         <div className="container mx-auto px-6 text-center flex flex-col md:flex-row items-center justify-center">
           <p className='flex items-baseline mr-4'> 
             <div className='rounded-full bg-black h-8 w-8 flex items-center justify-center mr-2'> 
@@ -20,7 +20,7 @@ const Footer = () => {
           <div className='rounded-full bg-black h-8 w-8 flex items-center justify-center mr-2'> 
                 <TbWorldWww className='text-white' /> 
             </div>
-         <span className="underline cursor-pointer"><a href="https://pcamerica.org/vendor/alchemy" target='_blank'>pcamerica.org/vendor/alchemy</a></span></p>
+         <span className="underline cursor-pointer"><a href="https://alchemy-consulting.com/" target='_blank'>alchemy-consulting.com</a></span></p>
           <p className='flex items-baseline mr-4'>
           <div className='rounded-full bg-black h-8 w-8 flex items-center justify-center mr-2 my-1'> 
                 <MdEmail className='text-white' /> 

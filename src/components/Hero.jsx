@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import React from 'react'
 import logo4 from '../assets/ALCHEMY.png';
 import TextRotator from './AnimateText';
+import { Link } from 'react-scroll';
 
 const Hero = () => {
       // Array of text strings to rotate
@@ -36,13 +37,15 @@ const Hero = () => {
         </p>
         
        
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="bg-[#ff3130] text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-[#ff3130] transition duration-300"
-        >
-          Book Consultation
-        </motion.button>
+        <Link to="footer" smooth={true} duration={3000}>
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-[#ff3130] text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-[#ff3130] transition duration-300 cursor-pointer"
+            >
+              Book Consultation
+            </motion.button>
+        </Link>
       </motion.div>
     </div>
   )
