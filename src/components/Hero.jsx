@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import React from 'react'
 import logo4 from '../assets/ALCHEMY.png';
+import logowhite from '../assets/ALCHEMY-white.png';
 import TextRotator from './AnimateText';
 import { Link } from 'react-scroll';
 import backgroundVideo from '../assets/bg-video.mp4'; 
@@ -42,7 +43,7 @@ const Hero = () => {
       >
             {/* Hero Section */}
         <div className='animate__animated animate__fadeInDown flex items-center justify-center'>
-            <img src={logo4} alt="logo" className='h-48 w-48 text-center mb-20' />
+            <img src={logowhite} alt="logo" className='h-48 w-48 text-center mb-20' />
         </div>
         <h1 className="text-3xl font-bold text-white mb-6">
           Decades of Collective Experience In
