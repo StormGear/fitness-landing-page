@@ -7,8 +7,10 @@ import React from 'react'
 import Form from "./Form";
 
 const LandingPage = () => {
+
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-purple-100">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-[#ff3130]-100">
         <Navbar />
         <Hero />
         <Testimonials />

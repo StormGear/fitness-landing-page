@@ -1,5 +1,3 @@
-
-
 import React from 'react'
 
 const Footer = () => {
@@ -7,7 +5,7 @@ const Footer = () => {
     <div>
       
       {/* Footer */}
-      <footer className="bg-purple-800 text-white py-8">
+      <footer className="bg-white text-black py-8">
         <div className="container mx-auto px-6 text-center">
           <p>&copy; 2023 MyBrand. All rights reserved.</p>
         </div>

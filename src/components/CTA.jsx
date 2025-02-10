@@ -13,7 +13,7 @@ const CTA = () => {
         transition={{ duration: 0.5 }}
         className="container mx-auto px-6 py-20 text-center"
       >
-        <h2 className="text-3xl font-bold text-purple-800 mb-6">
+        <h2 className="text-3xl font-bold text-[#ff3130] mb-6">
           Ready to Get Started?
         </h2>
         <p className="text-xl text-gray-600 mb-8">
@@ -22,7 +22,7 @@ const CTA = () => {
         <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="bg-purple-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-purple-700 transition duration-300"
+          className="bg-[#ff3130] text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-[#ff3130] transition duration-300"
         >
           Sign Up Now
         </motion.button>
