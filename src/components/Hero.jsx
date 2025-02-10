@@ -36,13 +36,13 @@ const Hero = () => {
         </p>
         
        
-        {/* <motion.button
+        <motion.button
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           className="bg-[#ff3130] text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-[#ff3130] transition duration-300"
         >
-          Get Started
-        </motion.button> */}
+          Book Consultation
+        </motion.button>
       </motion.div>
     </div>
   )

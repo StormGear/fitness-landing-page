@@ -29,9 +29,9 @@ const Partnerships = () => {
                       <p className='underline'>Intuitive Global Consulting &</p>
                       <p>&nbsp;&nbsp;&nbsp;<span className="underline">The Kyra Company</span></p>
               </div>
-              <div className='flex text-center justify-center mb-10'>
-               <img src={logo3} alt="" className='h-24 w-24 mx-4'/>
-                <img src={logo2} alt="" className='h-20 w-24 '/>
+              <div className='flex text-center justify-center items-center mb-10'>
+               <img src={logo3} alt="" className='h-30 w-full mx-4'/>
+                <img src={logo2} alt="" className='h-18 w-full mx-2 '/>
               </div>
           </div>
           <div className='border-t-2 border-b-2 border-black p-6 flex justify-between md:hidden'>
