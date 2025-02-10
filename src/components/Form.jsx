@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import emailjs from 'emailjs-com';
 
 const Form = () => {
   const [formData, setFormData] = useState({
@@ -21,6 +22,13 @@ const Form = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Simulate form submission (e.g., API call)
+    emailjs.send('service_z6k0ixq', 'template_0je1wuh', formData, 'FMln_4viTGxeet27B')
+    .then((response) => {
+      console.log('SUCCESS!', response.status, response.text);
+      setSubmitted(true);
+    }, (err) => {
+      console.log('FAILED...', err);
+    });
     console.log("Form Data Submitted:", formData);
     setSubmitted(true);
   };
@@ -30,7 +38,7 @@ const Form = () => {
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="bg-white p-8 rounded-lg shadow-lg max-w-md mx-auto mb-10"
+      className="bg-white p-8 rounded-lg shadow-lg max-w-md mx-auto mb-10 my-10"
     >
       {submitted ? (
         <div className="text-center">

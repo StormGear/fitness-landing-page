@@ -21,7 +21,7 @@ const TextRotator = ({ texts, interval = 3000 }) => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.5 }}
-          className="inline-block"
+          className="inline-block font-bold text-4xl italic text-white"
         >
           {texts[index]}
         </motion.span>

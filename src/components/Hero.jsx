@@ -5,6 +5,7 @@ import React from 'react'
 import logo4 from '../assets/ALCHEMY.png';
 import TextRotator from './AnimateText';
 import { Link } from 'react-scroll';
+import backgroundVideo from '../assets/bg-video.mp4'; 
 
 const Hero = () => {
       // Array of text strings to rotate
@@ -15,24 +16,41 @@ const Hero = () => {
     "Public Sector Solutions",
   ];
   return (
-    <div>
-            {/* Hero Section */}
-        <div className='animate__animated animate__fadeInDown flex items-center justify-center bg-gradient-to-br from-blue-50 to-[#ff3130]-100 mt-20'>
-            <img src={logo4} alt="logo" className='h-48 w-48 text-center' />
-        </div>
-    <motion.div
+    <div className="relative h-screen flex items-center justify-center overflow-hidden">
+
+         {/* Video Background */}
+      <video
+        autoPlay
+        loop
+        muted
+        className="absolute top-0 left-0 w-full h-full object-cover z-0"
+      >
+        <source src={backgroundVideo} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      {/* Overlay Content */}
+      
+      {/* Semi-Transparent Overlay */}
+      <div className="absolute inset-0 bg-black opacity-50 z-10"></div>
+
+      <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="container mx-auto px-6 py-20 text-center"
+        className="container mx-auto px-6 text-center relative z-20"
       >
-        <h1 className="text-3xl font-bold text-[#ff3130]-800 mb-6">
+            {/* Hero Section */}
+        <div className='animate__animated animate__fadeInDown flex items-center justify-center'>
+            <img src={logo4} alt="logo" className='h-48 w-48 text-center mb-20' />
+        </div>
+        <h1 className="text-3xl font-bold text-white mb-6">
           Decades of Collective Experience In
         </h1>
-        <p className="text-xl text-gray-600 mb-8">
+        <p className="text-xl text-white mb-8">
             <TextRotator texts={rotatingTexts} interval={2000} />
         </p>
-        <p className='text-xl text-gray-600 mb-8'>
+        <p className='text-2xl font-bold text-white mb-8'>
             Now Available Through Your PCA Membership | Contract OD-418-24
         </p>
         
