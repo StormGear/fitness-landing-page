@@ -7,6 +7,7 @@ import { GoLaw } from "react-icons/go";
 import { IoSchoolSharp } from "react-icons/io5";
 import { BsSuitcaseLgFill } from "react-icons/bs";
 import { RiCommunityFill } from "react-icons/ri";
+import megaphone from '../assets/megaphone.png';
 
 const Partnerships = () => {
   return (
@@ -77,8 +78,9 @@ const Partnerships = () => {
           </div>
       </div>
       <div className="flex justify-end">
-          <div className='border border-r-0 rounded-l-4xl border-t-black border-b-black text-right p-3 w-full md:w-1/2'>
+          <div className='border border-r-0 rounded-l-4xl border-t-black border-b-black text-right p-3 w-full md:w-1/2 relative'>
                 <p >Elevate Your Organization with Expert Consulting & Training Services</p>
+                <img src={megaphone} alt="" className='h-15 w-15 absolute -top-11 -left-9'/>
          </div>
       </div>
 

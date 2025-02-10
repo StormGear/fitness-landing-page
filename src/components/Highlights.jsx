@@ -3,12 +3,14 @@
 import React from 'react'
 import { FaPhoneAlt } from 'react-icons/fa'
 import { GiFlowerStar } from "react-icons/gi";
+import lightbulb from '../assets/lightbulb.png';
 
 const Highlights = () => {
   return (
     <div className='bg-[#ff3130] text-white py-20 grid grid-cols-1 md:grid-cols-3 gap-8'>
       <div className='text-center font-bold'>
         <p className='text-left ml-5 text-4xl'>Key <br/>  Highlights</p>
+        <img src={lightbulb} alt=""  className='mt-10 ml-5 h-25 w-25'/>
       </div>
       <div>
         <p className='ml-10'>NIGP Code: 91838</p>
