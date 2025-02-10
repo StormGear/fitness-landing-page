@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion'
 import React from 'react'
-import AnimatedText from './AnimateText'
 import logo4 from '../assets/ALCHEMY.png';
 import TextRotator from './AnimateText';
 
