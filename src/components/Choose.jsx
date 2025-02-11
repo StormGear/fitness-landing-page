@@ -19,8 +19,8 @@ const TextImageSection = () => {
           </h2>
           <p className="text-gray-600 mb-6">
           We deliver comprehensive
-          motivational Speaking and
-          Coaching Services.
+          motivational speaking and
+          coaching Services.
           </p>
         </motion.div>
 
