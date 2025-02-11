@@ -35,9 +35,9 @@ const Partnerships = () => {
               </div>
           </div>
           <div className='border-t-2 border-b-2 border-black p-6 flex justify-between md:hidden'>
-          <div className='p-6 flex flex-col md:text-2xl'>
-              <p>Designed Specifically</p>
-              <p>&nbsp;&nbsp;&nbsp;&nbsp;For...</p>
+          <div className='p-6 flex flex-col md:text-3xl font-bold'>
+            <p>DESIGNED SPECIFICALLY</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;FOR...</p>
           </div>
         </div>
           <div className='mt-6 p-6'>
