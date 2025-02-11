@@ -13,13 +13,13 @@ const Partnerships = () => {
   return (
     <>
     <div className='border-t-2 border-b-2 border-black p-6 flex justify-between'>
-          <div className='p-6 flex flex-col md:text-2xl'>
-              <p>In Partnership</p>
-              <p>&nbsp;&nbsp;&nbsp;&nbsp;With...</p>
+          <div className='p-6 flex flex-col md:text-3xl font-bold'>
+              <h1>IN PARTNERSHIP</h1>
+              <h1>&nbsp;&nbsp;&nbsp;&nbsp;WITH...</h1>
           </div>
-          <div className='hidden p-6 md:flex flex-col md:text-2xl'>
-              <p>Designed Specifically</p>
-              <p>&nbsp;&nbsp;&nbsp;&nbsp;For...</p>
+          <div className='hidden p-6 md:flex flex-col md:text-3xl font-bold'>
+              <p>DESIGNED SPECIFICALLY</p>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;FOR...</p>
           </div>
       </div>
       <div>
@@ -30,8 +30,8 @@ const Partnerships = () => {
                       <p>&nbsp;&nbsp;&nbsp;<span className="underline">The Kyra Company</span></p>
               </div>
               <div className='flex text-center justify-center items-center mb-10'>
-               <img src={logo3} alt="" className='h-30 w-full mx-4'/>
-                <img src={logo2} alt="" className='h-18 w-full mx-2 '/>
+               <a href="https://intuitiveglobalconsulting.com" className='block mr-8' target='_blank'><img src={logo3} alt="" className='h-25 w-full mx-4'/></a>
+                <a href="https://thekyracompany.com" className="block" target='_blank'><img src={logo2} alt="" className='h-18 w-full mx-2 '/></a>
               </div>
           </div>
           <div className='border-t-2 border-b-2 border-black p-6 flex justify-between md:hidden'>
