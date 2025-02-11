@@ -13,7 +13,7 @@ const LandingPage = () => {
 
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-[#ff3130]-100">
+    <div className="min-h-screen">
         <Navbar />
         <Hero />
         <Testimonials />
