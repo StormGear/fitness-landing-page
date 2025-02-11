@@ -20,7 +20,7 @@ const LandingPage = () => {
         <Partnerships />
         <Highlights />
          {/* <CTA /> */}
-         {/* <Form />  */}
+         <Form /> 
         <Footer />
     </div>
   );
