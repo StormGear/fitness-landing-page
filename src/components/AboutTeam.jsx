@@ -26,7 +26,7 @@ return (
                 >
                   <div className="border-8 border-white">
                       <img
-                        src={hargrovy}
+                        src={kyra}
                         alt="Placeholder"
                         className="w-48 h-48 rounded-full object-cover mx-auto shadow-lg border-4 border-[#ff3130]"
                       />
@@ -51,7 +51,7 @@ return (
                 >
                   <div className="border-8 border-white">
                       <img
-                        src={kyra} // Replace with your image URL
+                        src={hargrovy} // Replace with your image URL
                         alt="Placeholder"
                         className="w-48 h-48 rounded-full object-cover mx-auto shadow-lg border-4 border-[#ff3130]"
                       />
