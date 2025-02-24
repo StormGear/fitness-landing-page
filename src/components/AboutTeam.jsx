@@ -58,7 +58,7 @@ return (
                   </div>
                 </motion.div>
                 <p className='mx-6 my-5'>
-                    <i><b>Arquella Hargrove, MBA,</b></i> 
+                    <i><b>Arquella Hargrove, MBA</b></i> 
                     <TextWithSeeMore text={hargrovebio} />
                 </p>
             </div>
@@ -79,7 +79,7 @@ return (
                   </div>
                 </motion.div>
                 <p className='mx-6 my-5'>
-                    <i><b>Ambassador Angelique Bartholomew, JD,</b></i> 
+                    <i><b>Ambassador Angelique Bartholomew, JD</b></i> 
                     <TextWithSeeMore text={jdbio} />
                 </p>
             </div>

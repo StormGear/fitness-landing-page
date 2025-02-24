@@ -52,7 +52,7 @@ const Hero = () => {
             <TextRotator texts={rotatingTexts} interval={2000} />
         </p>
         <p className='text-2xl font-bold text-white mb-8'>
-            Now Available Through Your PCA Membership | Contract OD-418-24
+            Now Available Through Your Purchasing Cooperative of America(PCA) Membership | Contract OD-418-24
         </p>
         
        
