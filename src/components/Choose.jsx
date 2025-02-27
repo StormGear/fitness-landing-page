@@ -15,7 +15,7 @@ const TextImageSection = () => {
           className="w-full md:w-1/2"
         >
           <h2 className="text-3xl font-bold text-left text-[#ff3130]-800 mb-12">
-            WHY CHOOSE OUR CONSURTIUM?
+            WHY CHOOSE OUR CONSORTIUM?
           </h2>
           <p className="text-gray-600 mb-6">
           We deliver comprehensive
