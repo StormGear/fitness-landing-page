@@ -13,7 +13,7 @@ const AboutTeam = () => {
 
 return (
     <div>
-        <h2 className="text-2xl font-bold text-[#ff3130]-800 m-6 text-center">
+        <h2 className="text-2xl font-bold text-[#25BE37]-800 m-6 text-center">
             About Our Team
         </h2>
         <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
@@ -28,7 +28,7 @@ return (
                       <img
                         src={kyra}
                         alt="Placeholder"
-                        className="w-48 h-48 rounded-full object-cover mx-auto shadow-lg border-4 border-[#ff3130]"
+                        className="w-48 h-48 rounded-full object-cover mx-auto shadow-lg border-4 border-[#25BE37]"
                       />
                   </div>
                 </motion.div>
@@ -53,7 +53,7 @@ return (
                       <img
                         src={hargrovy} // Replace with your image URL
                         alt="Placeholder"
-                        className="w-48 h-48 rounded-full object-cover mx-auto shadow-lg border-4 border-[#ff3130]"
+                        className="w-48 h-48 rounded-full object-cover mx-auto shadow-lg border-4 border-[#25BE37]"
                       />
                   </div>
                 </motion.div>
@@ -74,7 +74,7 @@ return (
                       <img
                         src={jd} // Replace with your image URL
                         alt="Placeholder"
-                        className="w-48 h-48 rounded-full object-cover mx-auto shadow-lg border-4 border-[#ff3130]"
+                        className="w-48 h-48 rounded-full object-cover mx-auto shadow-lg border-4 border-[#25BE37]"
                       />
                   </div>
                 </motion.div>

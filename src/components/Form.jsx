@@ -96,7 +96,7 @@ const Form = () => {
     >
       {state.success ? (
         <div className="text-center">
-          <h3 className="text-2xl font-bold text-[#ff3130]-800 mb-4">
+          <h3 className="text-2xl font-bold text-[#25BE37]-800 mb-4">
             Thank You!
           </h3>
           <p className="text-gray-600">
@@ -105,7 +105,7 @@ const Form = () => {
         </div>
       ) : (
         <form onSubmit={handleSubmit}>
-          <h2 className="text-2xl font-bold text-[#ff3130]-800 mb-6 text-center">
+          <h2 className="text-2xl font-bold text-[#25BE37]-800 mb-6 text-center">
             Contact Us
           </h2>
           {!isOnline && (
@@ -122,7 +122,7 @@ const Form = () => {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full px-4 py-2 border-gray-400 border-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#ff3130]-600 "
+              className="w-full px-4 py-2 border-gray-400 border-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#25BE37]-600 "
               placeholder="Enter your name"
               required
             />
@@ -136,7 +136,7 @@ const Form = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full px-4 py-2 border-gray-400 border-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#ff3130]-600"
+              className="w-full px-4 py-2 border-gray-400 border-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#25BE37]-600"
               placeholder="Enter your email"
               required
             />
@@ -150,7 +150,7 @@ const Form = () => {
               name="phone"
               value={formData.phone}
               onChange={handleChange}
-              className="w-full px-4 py-2 border-gray-400 border-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#ff3130]-600"
+              className="w-full px-4 py-2 border-gray-400 border-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#25BE37]-600"
               placeholder="Enter your phone number"
               required
             />
@@ -163,7 +163,7 @@ const Form = () => {
               name="message"
               value={formData.message}
               onChange={handleChange}
-              className="w-full px-4 py-2 border-gray-400 border-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#ff3130]-600"
+              className="w-full px-4 py-2 border-gray-400 border-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#25BE37]-600"
               placeholder="Enter your message"
               rows={4}
               required
@@ -174,7 +174,7 @@ const Form = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             type="submit"
-            className="w-full bg-[#ff3130] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#ff3130] transition duration-300"
+            className="w-full bg-[#25BE37] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#25BE37] transition duration-300"
           >
             {state.loading ?  'Submitting...' : 'Submit'}
           </motion.button>

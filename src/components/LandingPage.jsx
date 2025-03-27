@@ -9,6 +9,7 @@ import Partnerships from "./Partnerships";
 import Highlights from "./Highlights";
 // import TextImageSection from "./Choose";
 import AboutTeam from "./AboutTeam";
+import FAQ from "./FAQ";
 
 const LandingPage = () => {
 
@@ -21,8 +22,9 @@ const LandingPage = () => {
         <Partnerships />
         <Highlights />
          {/* <CTA /> */}
-         <AboutTeam />
-         <Form /> 
+         <FAQ/>
+         {/* <AboutTeam /> */}
+         {/* <Form />  */}
         <Footer />
     </div>
   );

@@ -7,20 +7,21 @@ import logowhite from '../assets/ALCHEMY-white.png';
 import TextRotator from './AnimateText';
 import { Link } from 'react-scroll';
 import backgroundVideo from '../assets/bg-video.mp4'; 
+import woman from '../assets/woman.png'
 
 const Hero = () => {
       // Array of text strings to rotate
   const rotatingTexts = [
-    "Leadership Development",
-    "Professional Consulting",
-    "Organizational Training",
-    "Public Sector Solutions",
+    "Natural",
+    "Effective",
+    "Science-Backed",
+
   ];
   return (
     <div className="relative h-screen flex items-center justify-center overflow-hidden">
 
          {/* Video Background */}
-      <video
+      {/* <video
         autoPlay
         loop
         muted
@@ -28,7 +29,7 @@ const Hero = () => {
       >
         <source src={backgroundVideo} type="video/mp4" />
         Your browser does not support the video tag.
-      </video>
+      </video> */}
 
       {/* Overlay Content */}
       
@@ -41,18 +42,18 @@ const Hero = () => {
         transition={{ duration: 1 }}
         className="container mx-auto px-6 text-center relative z-20"
       >
-            {/* Hero Section */}
+        {/* Hero Section */}
         <div className='animate__animated animate__fadeInDown flex items-center justify-center'>
-            <img src={logowhite} alt="logo" className='h-48 w-48 text-center mb-20' />
+            <img src={woman} alt="logo" className='h-48 w-48 text-center mb-20' />
         </div>
         <h1 className="text-3xl font-bold text-white mb-6">
-          Decades of Collective Experience In
+          Struggling with Low Energy and Stubborn Weight? BioBoost Plus Can Help!
         </h1>
         <p className="text-xl text-white mb-8">
             <TextRotator texts={rotatingTexts} interval={2000} />
         </p>
         <p className='text-2xl font-bold text-white mb-8'>
-            Now Available Through Your Purchasing Cooperative of America(PCA) Membership | Contract OD-418-24
+            Order Now – Limited Supply Available
         </p>
         
        
@@ -60,9 +61,9 @@ const Hero = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-[#ff3130] text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-[#ff3130] transition duration-300 cursor-pointer"
+              className="bg-[#25BE37] text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-[#25BE37] transition duration-300 cursor-pointer"
             >
-              Book Consultation
+              Order Now!
             </motion.button>
         </Link>
       </motion.div>

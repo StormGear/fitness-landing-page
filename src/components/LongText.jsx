@@ -30,7 +30,7 @@ const TextWithSeeMore = ({ text, maxLength = 150 }) => {
       
       <motion.button
         onClick={() => setIsExpanded(!isExpanded)}
-        className="text-[#ff3130]  text-sm font-medium focus:outline-none"
+        className="text-[#25BE37]  text-sm font-medium focus:outline-none"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         transition={{ duration: 0.2 }}
