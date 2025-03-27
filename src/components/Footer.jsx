@@ -3,7 +3,7 @@ import { FaSquarePhone } from "react-icons/fa6";
 import { TbWorldWww } from "react-icons/tb";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import { SocialIcon } from 'react-social-icons/component'
+import youtube from '../assets/youtube.svg';
 
 const Footer = () => {
   return (
@@ -17,7 +17,7 @@ const Footer = () => {
           <TbWorldWww className='text-white' /> 
             </div>
          <span className="underline cursor-pointer"><a href="https://alchemy-consulting.com/" target='_blank'>alchemy-consulting.com</a></span></p>
-         <SocialIcon url="www.vimeo.com" />
+         <img src={youtube} alt="" />
           <p className='flex items-baseline mr-4'>
           <div className='rounded-full bg-black h-8 w-8 flex items-center justify-center mr-2 my-1'> 
                 <MdEmail className='text-white' /> 
