@@ -14,38 +14,36 @@ const Footer = () => {
       
       {/* Footer */}
       <footer id="footer" className="bg-white text-black pt-40 pb-5">
-        <div className="container mx-auto px-6 text-center flex flex-col md:flex-row items-center justify-center">
-          <p className='flex items-center mr-4'>
-          <div className='rounded-full bg-black h-8 w-8 flex items-center justify-center mr-2'> 
-          <TbWorldWww className='text-white' /> 
-            </div>
-         <span className="underline cursor-pointer"><a href="https://www.confihealthfit.com 
-" target='_blank'>confihealthfit.com</a></span></p>
+        <div className="text-center flex flex-col md:flex-row items-center justify-center">
+          <p className='flex items-center mr-1 mb-1' >
+            <TbWorldWww className='text-black-500 w-7 h-7' /> 
+         <span className=" cursor-pointer ml-2"><a href="https://www.confihealthfit.com 
+              " target='_blank'>confihealthfit.com</a></span>
+          </p>
 
-          <p className='flex items-center mr-4'>
+          <p className='flex items-start mr-7 mb-1'>
          <img src={facebook} alt="" className='h-7 w-7 '/>
-            <span className="underline cursor-pointer">
+            <span className="cursor-pointer ml-2">
             <a href="https://www.facebook.com/sandrabafrifah/" target='_blank'>sandrabafrifah</a></span>
             </p>
 
-          <p className='flex items-center mr-4'>
-          <img src={youtube} alt="" className='h-7 w-7 '/>
-         
-            <span className="underline cursor-pointer">
+          <p className='flex items-center mr-4 mb-1'>
+          <img src={youtube} alt="" className='h-7 w-7'/>
+            <span className="cursor-pointer ml-2">
             <a href="https://www.youtube.com/@sandrabafrifah">@sandrabafrifah</a></span>
             </p>
 
-          <p className='flex items-center mr-4'>
+          <p className='flex items-center mr-4 mb-1'>
           <img src={tiktok} alt="" className='h-7 w-7 ' />
  
-            <span className="underline cursor-pointer">
+            <span className=" cursor-pointer ml-2">
             <a href="https://www.tiktok.com/@sandrabafrifah">@sandrabafrifah</a></span>
             </p>
 
-          <p className='flex items-center mr-4'>
+          <p className='flex items-center mr-4 mb-1'>
           <img src={instagram} alt="" className='h-7 w-7' />
      
-            <span className="underline cursor-pointer">
+            <span className=" cursor-pointer ml-2">
             <a href="https://www.instagram.com/sandrabafrifah/
 ">@sandrabafrifah</a></span>
             </p>

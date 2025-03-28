@@ -5,7 +5,7 @@ import three from '../assets/three.png';
 import { FaCircleCheck } from "react-icons/fa6";
 import { FaCircle } from "react-icons/fa";
 import { FaCheck } from "react-icons/fa";
-import legsCrossed from '../assets/leg_crossed.PNG';
+import ConfiHealth from "./ConfiHealth";
 
 const TextImageSection = () => {
   return (
@@ -26,8 +26,7 @@ const TextImageSection = () => {
           <br />
           <span className="font-bold">BioBoost Plus</span> is a powerful <span className="font-bold">lipotropic vitamin blend</span> designed to <span>boost metabolism, burn fat, and increase energy</span>—without extreme diets or medications.
           <br />
-          <br />
-          <span className="font-bold">ConfiHealthFit is founded by Sandra Bilson Afrifah, a passionate advocate for preventive health and helping women get into the best shape of their lives.</span> Her mission is to empower women with <span className="font-bold">science-backed, sustainable weight loss solutions</span> that fit their lifestyle.`
+
           </p>
         </motion.div>
 
@@ -51,7 +50,7 @@ const TextImageSection = () => {
           </ul>
           <p className="flex items-center ">
             <FaCircleCheck className="text-[#25BE37] h-5 w-5"/>
-            <span className="ml-3">Order Now – Get the natural support your body needs</span>
+            <span className="ml-3"><span className="font-bold">Order Now!</span> – Get the natural support your body needs</span>
           </p>
           </p>
         </motion.div>
@@ -63,24 +62,6 @@ const TextImageSection = () => {
           className="w-full md:w-1/2"
         >
           <div>
-              {/* <div className="flex justify-center items-center">
-                  <motion.div
-                    initial={{ opacity: 0, x: -50 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.8 }}
-                    className="border-4 border-[#25BE37]-200 rounded-full flex justify-center items-center" // Replace with your border color
-                          >
-                 <div className="h-20 w-20 rounded-full border-8 border-white p-1 flex justify-center items-center">
-                  <img
-                    src={three} // Replace with your image URL
-                    alt="Placeholder"
-                    className="w-1/2 rounded-full"
-                  />
-                </div>
-            </motion.div>
-                  
-                <p className="text-gray-600 ml-4"> DECADES OF EXPERIENCE IN </p>
-              </div> */}
               <p>
               If your metabolism feels sluggish, you’re constantly battling cravings, or weight loss feels harder than it should, BioBoost Plus is the natural solution you need. This powerful lipotropic vitamin blend is designed to support fat metabolism, boost energy, and help your body burn fat efficiently—without extreme dieting or harsh stimulants.
               </p>
@@ -97,28 +78,18 @@ const TextImageSection = () => {
                  <FaCheck className='text-black h-5 w-5 mr-2'/>
                  Boosts energy levels so you feel your best every day       
                 </li>
-          
             </ul>
+                        
+          <br />
+       
           </div>
 
         </motion.div>
 
         {/* Image on the left (or top on smaller screens) */}
-        <motion.div
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          className="w-full md:w-1/2 border-4 border-[#25BE37]" // Replace with your border color
-        >
-          <div className="overflow-hidden border-8 border-white">
-              <img
-                src={legsCrossed} // Replace with your image URL
-                alt="Placeholder"
-                className="w-full "
-              />
-          </div>
-        </motion.div>
+       
       </div>
+      < ConfiHealth />
     </div>
   );
 };
