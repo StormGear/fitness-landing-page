@@ -1,10 +1,8 @@
 import React, { useReducer, useState } from "react";
 import { motion } from "framer-motion";
-// import emailjs from 'emailjs-com';
+import emailjs from 'emailjs-com';
 import { useNetworkStatus } from "../utils/internet";
 import { Resend } from 'resend';
-
-const resend = new Resend(import.meta.env.VITE_RESEND_KEY); 
 
 // Initial state for the reducer
 const initialState = {
@@ -29,7 +27,6 @@ const reducer = (state, action) => {
 
 const Form = () => {
   const isOnline = useNetworkStatus();
-  console.log('Resend key: ', import.meta.env.VITE_RESEND_KEY);
   
   const [formData, setFormData] = useState({
     name: "",
@@ -60,58 +57,36 @@ const Form = () => {
     }
     dispatch({ type: 'LOADING' });
 
-  //    // Replace with your EmailJS service ID, template ID, and user ID
-  //    const serviceID = 'service_z6k0ixq';
-  //    const templateID = 'template_0je1wuh';
-  //    const userID = 'FMln_4viTGxeet27B';
+     // Replace with your EmailJS service ID, template ID, and user ID
+     const serviceID = 'service_z6k0ixq';
+     const templateID = 'template_0je1wuh';
+     const userID = 'FMln_4viTGxeet27B';
 
-  //    const emailData = {
-  //     ...formData,
-  //     from_name: formData.name,
-  //     reply_to: formData.email,
-  //     phone: formData.phone,
-  //     // to_email: "papa.boahen@acity.edu.gh", // Replace with the recipient's email
-  //   };
+     const emailData = {
+      ...formData,
+      from_name: formData.name,
+      reply_to: formData.email,
+      phone: formData.phone,
+      // to_email: "papa.boahen@acity.edu.gh", // Replace with the recipient's email
+    };
 
-  //   try {
+    try {
   
-  //   // Simulate form submission (e.g., API call)
-  //   emailjs.send(serviceID, templateID, emailData, userID)
-  //   .then((response) => {
-  //     console.log('SUCCESS!', response.status, response.text);
-  //     dispatch({ type: 'SUCCESS' });
-  //     console.log("Form Data Submitted:", formData);
-  //   }, (err) => {
-  //     console.log('FAILED...', err);
-  //     dispatch({ type: 'ERROR', payload: err });
-  //   });
-  // } catch (e) {
-  //   dispatch({ type: 'ERROR', payload: e.toString() });
-  // }
-
-  try {
-    const data = await resend.emails.send({
-      from: formData.email, // Replace with your "from" email
-      to: ['papakofiboahen@gmail.com'], // Replace with your recipient's email
-      subject: 'Consultation Form Submission',
-      html: `
-        <p><strong>Name:</strong> ${formData.name}</p>
-        <p><strong>Email:</strong> ${formData.email}</p>
-        <p><strong>Phone:</strong> ${formData.phone}</p>
-        <p><strong>Message:</strong> ${formData.message}</p>
-      `,
-    });
-    console.log(`data ${JSON.stringify(data)}`);
-
-    if (data.data) {
+    // Simulate form submission (e.g., API call)
+    emailjs.send(serviceID, templateID, emailData, userID)
+    .then((response) => {
+      console.log('SUCCESS!', response.status, response.text);
       dispatch({ type: 'SUCCESS' });
       console.log("Form Data Submitted:", formData);
-    } else {
-      dispatch({ type: 'ERROR', payload: data.error });
-    }
-  } catch (error) {
-    dispatch({ type: 'ERROR', payload: error.message });
+    }, (err) => {
+      console.log('FAILED...', err);
+      dispatch({ type: 'ERROR', payload: err });
+    });
+  } catch (e) {
+    dispatch({ type: 'ERROR', payload: e.toString() });
   }
+
+
    
   };
 

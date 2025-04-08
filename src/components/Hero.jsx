@@ -1,11 +1,7 @@
 import { motion } from 'framer-motion'
 import React from 'react'
-import logo4 from '../assets/ALCHEMY.png';
-import logowhite from '../assets/ALCHEMY-white.png';
 import TextRotator from './AnimateText';
 import { Link } from 'react-scroll';
-import backgroundVideo from '../assets/bg-video.mp4'; 
-import woman from '../assets/woman.png'
 import bg from '../assets/bg_image.jpg'
 
 const Hero = () => {

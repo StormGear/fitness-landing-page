@@ -1,9 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { GiFlowerStar } from "react-icons/gi";
-import three from '../assets/three.png';
 import { FaCircleCheck } from "react-icons/fa6";
-import { FaCircle } from "react-icons/fa";
 import { FaCheck } from "react-icons/fa";
 import ConfiHealth from "./ConfiHealth";
 
