@@ -40,7 +40,7 @@ const TextImageSection = () => {
           <h2 className="text-3xl font-bold text-left text-[#25BE37]-800 mb-12">
           Why Choose BioBoost Plus?
           </h2>
-          <p className="text-gray-600 mb-6">
+          <div className="text-gray-600 mb-6">
           Unlike traditional weight loss supplements, <span className="font-bold">BioBoost Plus</span> works by supporting your body's natural fat-burning processes.
           <ul className="list-disc ml-6 my-5">
             <li>  <span className="font-bold">Boosts Metabolism </span>– Helps your body break down and burn fat efficiently</li>
@@ -52,7 +52,7 @@ const TextImageSection = () => {
             <FaCircleCheck className="text-[#25BE37] h-5 w-5"/>
             <span className="ml-3"><span className="font-bold">Order Now!</span> – Get the natural support your body needs</span>
           </p>
-          </p>
+          </div>
         </motion.div>
 
         <motion.div
