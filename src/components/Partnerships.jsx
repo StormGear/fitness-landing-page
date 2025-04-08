@@ -102,10 +102,10 @@ const Partnerships = () => {
  <div className='border-b-1 border-gray-400 pl-10 pr-10 flex justify-between md:hidden'>
          
         </div>
-          
+{/*           
           <div className='p-6 font-bold text-3xl'>
           Real Women. Real Results.
-          </div>
+          </div> */}
       </div>
     </div>
           </>

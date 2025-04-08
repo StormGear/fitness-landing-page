@@ -28,7 +28,7 @@ const ConfiHealth = () => {
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
-          className="border-4 border-[#ff3130]-200 rounded-full" // Replace with your border color
+          className="border-4 border-[#25BE37] rounded-full" // Replace with your border color
         >
           <div className="overflow-hidden rounded-full border-8 border-white">
               <img

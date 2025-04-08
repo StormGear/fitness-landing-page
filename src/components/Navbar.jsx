@@ -2,10 +2,6 @@
 
 import React from 'react'
 import 'animate.css';
-// import logo from '../assets/logo.jpeg'; 
-// import logo2 from '../assets/TKC.png'; 
-// import logo3 from '../assets/Intutive-Global.png'; 
-import logo4 from '../assets/ALCHEMY.png';
 import dumbell from '../assets/dumbell.webp';
 import { Link } from 'react-scroll'
 
@@ -22,9 +18,9 @@ const Navbar = () => {
             <p>ConfiHealthFit</p>
             <img src={dumbell} alt="" className='w-15 h-15' />
             </div>
-          <Link to="footer" smooth={true} duration={3000}>
+          <Link to="book-form" smooth={true} duration={3000}>
               <button className="bg-[#25BE37] text-white px-6 py-2 rounded-lg hover:bg-[#25BE37] transition duration-300 hover:scale-110 cursor-pointer">
-                Order Now!
+                Book Consultation
               </button>
           </Link>
         </div>

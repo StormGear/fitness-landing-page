@@ -34,13 +34,13 @@ const Hero = () => {
 
 
             <div className="text-left">
-              <Link to="footer" smooth={true} duration={3000}>
+              <Link to="book-form" smooth={true} duration={3000}>
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="bg-[#25BE37] text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-[#25BE37] transition duration-300 cursor-pointer"
                 >
-                  Order Now!
+                  Book Consultation
                 </motion.button>
               </Link>
             </div>
